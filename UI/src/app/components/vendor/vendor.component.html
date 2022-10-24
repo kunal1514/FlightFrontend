@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendor Details</title>
+    <style>
+        table, tr, th,td {
+            border: solid 1px black;
+        }
+        tr, td {
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Contact Number</th>
+            <!-- <th>Address</th>
+            <th>Gender</th>
+            <th>Age</th> -->
+        </tr>
+    
+            <tr *ngFor = "let v of vendors">
+                <td>{{v.name}}</td>
+                <td>{{v.contact_number}}</td>
+                <!-- <td>{{c.address}}</td>
+                <td>{{c.gender}}</td>
+                <td>{{c.age}}</td> -->
+            </tr>
+    </table>
+</body>
+</html>

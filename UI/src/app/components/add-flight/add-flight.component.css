@@ -1,0 +1,24 @@
+body {
+    background-color: aliceblue;
+}
+.inner-row {
+    height: 115vh;
+}
+
+.primaryBg {
+    background: rgba(141, 194, 111, 1);
+}
+
+.primaryColor {
+    color: rgb(75, 205, 24);
+}
+
+.form-box {
+    background-color: #fff;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.dates, .times, .seats, .prices {
+    display: flex;
+    justify-content: space-between;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendor Dasboard</title>
+</head>
+<body>
+    <div class="banner-area">
+        <h2 class="banner-heading">Vendor Dashboard</h2>
+    </div>
+    <div class="operations">
+        <div class="add-flight mt-5">
+            <h4 class="heading">Add New Flight:</h4>
+            <a class="addflight-link" routerLink="/vendor/add/flight">+Add Flight</a>
+        </div>
+        <div class="view-bookings mt-5">
+            <h4 class="heading">View Bookings:</h4>
+            <a class="viewbooking-link" routerLink="/vendor/view/bookings">View Bookings</a>
+        </div>
+    </div>
+    <div class="container mt-5">
+        <div class="flight-header mb-1">
+            <h2>All Flights</h2>    
+        </div>
+        <div class="header_fixed">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Flight No.</th>
+                        <th>Flight Name</th>
+                        <th>Source</th>
+                        <th>Destination</th>
+                        <th>Departure Date</th>
+                        <th>Arrival Date</th>
+                        <th>Boarding Time</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>MumbaiToChennai</td>
+                        <td>Mumbai</td>
+                        <td>Chennai</td>
+                        <td>2022-10-24</td>
+                        <td>2022-10-25</td>
+                        <td>17:35:27</td>
+                        <td>
+                            <button class="edit-btn" routerLink="/vendor/edit/flight"><i class="bi bi-pencil-square"></i></button>
+                            <button class="delete-btn"><i class="bi bi-trash-fill"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>DelhiToMumbai</td>
+                        <td>Delhi</td>
+                        <td>Mumbai</td>
+                        <td>2022-10-27</td>
+                        <td>2022-10-27</td>
+                        <td>17:35:27</td>
+                        <td>
+                            <button class="edit-btn"><i class="bi bi-pencil-square"></i></button>
+                            <button class="delete-btn"><i class="bi bi-trash-fill"></i></button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+</body>
+</html>

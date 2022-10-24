@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap');
+
+
+.banner-area {
+    background-image: url(../../../assets/view_bookings_banner.webp);
+    background-size: cover;
+    background-position: center center;
+    height: 60vh;
+    width: 100%;
+}
+
+.banner-area:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    opacity: .7;
+    z-index: -1;
+}
+
+.banner-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-area .banner-heading {
+    color: #fff;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 50px;
+    letter-spacing: 1px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.header_fixed {
+    max-height: 100vh;
+    width: 100%;
+    overflow: auto;
+    border: 1px solid #dddddd;
+    margin-left: 7%;
+    margin-bottom: 30px;
+}
+
+.header_fixed thead th {
+    position: sticky;
+    top: 0;
+    background-color: black;
+    color: #e6e7e8;
+    font-size: 15px;
+}
+
+th,
+td {
+    border-bottom: 1px solid #dddddd;
+    padding: 10px 20px;
+    font-size: 14px;
+}
+
+tr:hover td {
+    color: #44b478;
+    cursor: pointer;
+    background-color: #ffffff;
+}
+
+.booking-header {
+    margin-left: 7%;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 35px;
+    letter-spacing: 1px;
+}

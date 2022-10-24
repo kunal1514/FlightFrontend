@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+</head>
+<body>
+    <div class="banner-area">
+        <h2 class="banner-heading">Admin Dashboard</h2>
+    </div>
+    <div class="view-customers mt-5">
+        <h4 class="heading">View Customers:</h4>
+        <a class="viewcustomers-link" routerLink="/admin/view/customers">View Customers</a>
+    </div>
+    <div class="container mt-5">
+        <div class="vendor-header mb-1">
+            <h2>All Vendors</h2>    
+        </div>
+        <div class="header_fixed">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Vendor Id</th>
+                        <th>Vendor Name</th>
+                        <th>Approval Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor = "let v of vendors">
+                        <td>{{v.id}}</td>
+                        <td>{{v.name}}</td>
+                        <td>{{v.approval_status}}</td>
+                        <td>
+                            <button class="approve-btn btn btn-success" [disabled] = "v.approval_status == 'Approved'">Approve</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
